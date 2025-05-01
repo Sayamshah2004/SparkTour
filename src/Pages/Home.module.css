@@ -1,0 +1,980 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Boldonse&family=Graduate&family=Gravitas+One&family=M+PLUS+Rounded+1c&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+.home-container {
+  margin-top: -2.4em;
+  max-width: 100%;
+  text-align: center;
+}
+.backgroundSection {
+  background-image: url(./src/assets/mainImage.jpg);
+  background-size: cover;
+  max-height: 100%;
+  border-bottom: 2px solid #555;
+  max-width: 100%;
+}
+
+/* Headings */
+.homeLine {
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 90vw;
+  text-align: center;
+  margin-top: 1em;
+  font-family: "roboto slab";
+  padding-top: 2em;
+  margin-left: 5%;
+}
+
+.uniqueLine {
+  margin-top: 4em;
+  font-size: 0.7em;
+  font-family: "roboto slab";
+
+  color: #0a0202;
+}
+
+/* Bucket List Adventures */
+.bucketAdvContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2vh;
+}
+
+.bucketAdv {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 3em;
+  letter-spacing: 0.1cm;
+  font-family: "winky sans";
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
+  color: white;
+}
+
+.bucketListImage {
+  width: 1.3em;
+  height: auto;
+  margin-bottom: -0.5em;
+}
+
+/* Bucket Section */
+.bucket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2vh;
+}
+
+.bucketImage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.destination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Images */
+.destination img {
+  width: 24vw;
+  height: 10vh;
+  max-width: 250px;
+  border: 2px solid white;
+  border-radius: 0.5em;
+}
+
+/* Buttons */
+.destination button {
+  width: 20vw;
+  max-width: 100%;
+  padding: 0.4em 0em;
+  font-size: 0.6em;
+  border: 2px solid white;
+  border-radius: 0.5em;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.destination button:hover {
+  background-color: #0056b3;
+}
+
+/* Crafted  */
+.featuresContainer {
+  display: inline;
+  align-items: end;
+  text-align: center;
+  justify-content: center;
+}
+.mainHeading {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "caveat";
+  color: green;
+  padding-top: 3em;
+}
+
+.description {
+  font-size: 0.6em;
+  line-height: 1.5;
+  text-align: center;
+  color: #555;
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+.featuresGrid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.featureItem:hover {
+  transform: scale(1.1);
+}
+
+.featureItem {
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1.1);
+  height: 5.5em;
+  border-radius: 1em;
+  background-color: beige;
+  width: 4.5em;
+}
+
+.featureItem img {
+  position: relative;
+  top: 1em;
+  height: 1em;
+  margin-bottom: 1em;
+}
+
+.featureItem h3 {
+  font-size: 0.6em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.featureItem p {
+  font-size: 0.5em;
+  color: #777;
+}
+
+.subHeading {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #e65100;
+  margin-top: 2em;
+  font-family: "caveat";
+}
+
+.line {
+  width: 10vw;
+  height: 0.2vh;
+  background-color: black;
+  margin: 10px auto;
+}
+/* Third Part */
+.ThirdContainer {
+  font-family: "Poppins", sans-serif;
+  padding: 5vh 10vw;
+  text-align: center;
+}
+
+.title {
+  font-family: "caveat";
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #e65100;
+  margin-bottom: 3vh;
+}
+
+/* Reviews Section */
+.reviews {
+  grid-row: auto;
+}
+/* Review Card */
+.reviewCard {
+  grid-column: auto;
+  border-radius: 1em;
+  height: auto;
+  background: beige;
+  transform: translateX(25%);
+  margin-bottom: 1em;
+  padding: 2vh;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  font-size: 1em;
+  line-height: 1.4;
+  max-width: 100%;
+  width: 50vw;
+}
+
+.reviewCard:hover {
+  transform: scale(1.05);
+}
+
+/* Customer Image */
+.customerImage {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 7em;
+  height: 7em; /* Reduced size for better fit */
+}
+
+/* Destination Grid */
+.destinationGrid {
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.destinationCard {
+  margin-top: 1em;
+  grid-row: auto;
+  position: relative;
+  text-align: center;
+}
+
+.destinationCard img {
+  max-width: 100%;
+  width: 60vw;
+  height: 20vh;
+  object-fit: contain;
+  border-radius: 1em;
+}
+.destinationCard img:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .home-container {
+    margin-top: -3em;
+    font-size: 1.8em;
+  }
+  .backgroundSection {
+    height: 80vh;
+  }
+  .homeLine {
+    margin-top: 2.5em;
+    margin-left: 5%;
+    padding-top: 1em;
+  }
+  .uniqueLine {
+    margin-top: 6em;
+    font-size: 0.9em;
+    color: #0a0202;
+  }
+
+  /* Bucket List Adventures */
+  .bucketAdvContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2vh;
+  }
+
+  .bucketAdv {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 1em;
+    color: white;
+  }
+
+  .bucketListImage {
+    width: 1.3em;
+    height: auto;
+    margin-bottom: -0.5em;
+  }
+
+  /* Bucket Section */
+
+  .destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Images */
+  .destination img {
+    width: 26vw;
+    height: 13vh;
+    max-width: 250px;
+    border: 2px solid white;
+    border-radius: 0.5em;
+  }
+
+  /* Buttons */
+  .destination button {
+    width: 15vw;
+    max-width: 100%;
+    padding: 0.4em 0em;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+
+  .destination button:hover {
+    background-color: #0056b3;
+  }
+  /* Crafted  */
+  .featuresContainer {
+    display: inline;
+    align-items: end;
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .mainHeading {
+    font-size: 1.5em;
+    font-weight: bold;
+
+    padding-top: 2em;
+  }
+
+  .description {
+    font-size: 0.9em;
+    line-height: 1.2;
+    text-align: center;
+    color: #555;
+    max-width: 700px;
+    margin: 10px auto;
+  }
+
+  .featuresGrid {
+    gap: 0.6em;
+  }
+
+  .featureItem {
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1.1);
+    height: 6em;
+    width: 7em;
+  }
+
+  .featureItem img {
+    position: relative;
+    top: 1em;
+    height: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .featureItem h3 {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+
+  .featureItem p {
+    font-size: 0.6em;
+    color: #777;
+  }
+
+  .subHeading {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 2em;
+  }
+
+  .line {
+    width: 10vw;
+    height: 0.1vh;
+    background-color: black;
+    margin: 10px auto;
+  }
+  /* third part */
+
+  .footerImage {
+    margin-left: -1em;
+    width: 1.5em;
+    margin-bottom: -1.5em;
+  }
+  #email {
+    margin-left: -4em;
+    margin-top: -0.4em;
+    font-size: 1.4em;
+  }
+  #phone {
+    margin-left: -9em;
+    margin-top: -0.4em;
+    font-size: 1.4em;
+  }
+  #address {
+    margin-left: 1.4em;
+    font-size: 1.4em;
+    margin-top: -0.4em;
+    text-align: start;
+  }
+  .title {
+    font-family: "caveat";
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #e65100;
+    margin-bottom: 3vh;
+  }
+
+  /* Reviews Section */
+  .reviews {
+    margin-top: 1em;
+    grid-row: auto;
+  }
+  /* Review Card */
+  .reviewCard {
+    grid-column: auto;
+    padding: 2vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    font-size: 0.8em;
+    max-width: 100%;
+  }
+
+  .reviewCard:hover {
+    transform: scale(1.05);
+  }
+
+  /* Customer Image */
+  .customerImage {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 8em; /* Reduced size for better fit */
+    height: 8em;
+  }
+  .destinationCard {
+    margin-top: 1em;
+    grid-row: auto;
+  }
+
+  .destinationCard img {
+    max-width: 100%;
+    width: 60vw;
+    height: 19vh;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 0.5em;
+  }
+}
+@media (min-width: 1025px) {
+  .home-container {
+    width: 100%;
+    margin-top: -3em;
+  }
+  .backgroundSection {
+    max-height: 100%;
+    height: 100vh;
+    margin-top: -6em;
+  }
+  .homeLine {
+    font-size: 2.8em;
+    margin-left: 5%;
+    padding-top: 2em;
+  }
+
+  .uniqueLine {
+    margin-top: 6em;
+    font-size: 2.2em;
+    color: #0a0202;
+  }
+
+  /* Bucket List Adventures */
+  .bucketAdvContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 13em;
+  }
+
+  .bucketAdv {
+    font-size: 2.5em;
+    letter-spacing: 0.2cm;
+    font-weight: bold;
+    margin-top: 1em;
+    color: white;
+  }
+
+  .bucketListImage {
+    width: 1.3em;
+    height: auto;
+    margin-bottom: -0.5em;
+  }
+
+  /* Bucket Section */
+
+  .destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Images */
+  .destination img {
+    width: 26vw;
+    height: 12vh;
+    max-width: 250px;
+    border: 2px solid white;
+    border-radius: 0.5em;
+  }
+
+  /* Buttons */
+  .destination button {
+    width: 16vw;
+    max-width: 100%;
+    padding: 0.4em 0em;
+    font-size: 1.5em;
+
+    border-radius: 0.5em;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+
+  .destination button:hover {
+    background-color: #0056b3;
+  }
+  /* Crafted  */
+  .featuresContainer {
+    display: inline;
+    align-items: end;
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .mainHeading {
+    font-size: 2.8em;
+    font-weight: bold;
+    padding-top: 3em;
+  }
+
+  .description {
+    font-size: 1.7em;
+    line-height: 1.5;
+    text-align: center;
+    color: #555;
+    max-width: 700px;
+    margin: 10px auto;
+  }
+
+  .featureItem {
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1.1);
+    height: 10em;
+    width: 11em;
+  }
+
+  .featureItem img {
+    position: relative;
+    top: 1em;
+    height: 2.5em;
+    margin-bottom: 1em;
+  }
+
+  .featureItem h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+
+  .featureItem p {
+    font-size: 1.1em;
+    color: #777;
+  }
+
+  .subHeading {
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-top: 2em;
+  }
+
+  .line {
+    width: 10vw;
+    height: 0.1vh;
+    background-color: black;
+    margin: 10px auto;
+  }
+  /* third part */
+
+  .footerImage {
+    margin-left: -1em;
+    width: 2em;
+    margin-bottom: -1.5em;
+  }
+  #email {
+    margin-left: -14em;
+    margin-top: -0.9em;
+    font-size: 1.6em;
+  }
+  #phone {
+    margin-left: -19em;
+    margin-top: -1em;
+    font-size: 1.6em;
+  }
+  #address {
+    margin-left: 1.4em;
+    font-size: 1.6em;
+    margin-top: -1em;
+    text-align: start;
+  }
+  .title {
+    font-family: "caveat";
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #e65100;
+    margin-bottom: 3vh;
+  }
+
+  /* Reviews Section */
+  .reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 6vw;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .reviews p {
+    margin-top: 0.8em;
+    font-size: 1.8em;
+    font-family: "Times New Roman";
+  }
+
+  .reviewCard {
+    padding: 2vh;
+    border-radius: 2em;
+    transform: none;
+    font-size: 0.8em;
+  }
+  .customerImage {
+    border-radius: 50%;
+    width: 14em;
+    height: 14em;
+  }
+  .destinationCard {
+    margin-top: 1em;
+    grid-row: auto;
+  }
+
+  .destinationCard img {
+    max-width: 100%;
+    width: 60vw;
+    height: 16vh;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 0.5em;
+  }
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; /* Space between items */
+  }
+  #phone {
+    margin-left: 1em;
+  }
+  #email {
+    margin-left: 1em;
+  }
+  .contactItem {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    gap: 1em; /* Space between icon and text */
+  }
+
+  .footerImage {
+    width: 5vw; /* Adjust size as needed */
+    height: 5vw;
+    margin-bottom: 1em;
+  }
+  .contactForm {
+    background: rgb(198, 195, 195);
+    padding: 1vh;
+    height: 28vh;
+    margin-left: -0.5em;
+    border-radius: 8px;
+  }
+  .contactForm input,
+  .contactForm textarea {
+    width: 80vw;
+    max-width: 100%;
+    padding: 0.5em 1em;
+    margin: 0.7em 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .contactForm ::placeholder {
+    color: black;
+    font-size: 1.2em;
+  }
+  .contactForm h3 {
+    font-size: 1.3em;
+  }
+  .contactForm button {
+    width: 100%;
+    background-color: rgb(7, 7, 60);
+    color: white;
+    border: none;
+    margin-top: 2em;
+    width: 7em;
+    padding: 0.8em 0.8em;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .contactSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contactInfo,
+  .contactForm {
+    width: 100%;
+    margin-bottom: 2vh;
+  }
+}
+@media (min-width: 1440px) {
+  .home-container {
+    margin-top: -4em;
+    width: 100%;
+  }
+  .backgroundSection {
+    max-height: 100%;
+    height: 130vh;
+    margin-top: -7em;
+  }
+  .homeLine {
+    margin-top: 1em;
+    margin-left: 5%;
+    font-size: 7em;
+    letter-spacing: 0.2in;
+  }
+  .uniqueLine {
+    margin-top: 3em;
+    font-size: 5em;
+    line-height: 1.5;
+    color: #0a0202;
+  }
+
+  /* Bucket List Adventures */
+  .bucketAdvContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2vh;
+  }
+
+  .bucketAdv {
+    font-size: 7em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
+    margin-top: 1.3em;
+    color: white;
+    margin-bottom: 1em;
+  }
+
+  .bucketListImage {
+    width: 1.3em;
+    height: auto;
+    margin-bottom: -0.5em;
+  }
+
+  /* Bucket Section */
+  .bucketImage {
+    gap: 14em;
+  }
+
+  .destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Images */
+  .destination img {
+    width: 20vw;
+    height: 24vh;
+    max-width: 100%;
+    border: 10px solid white;
+    border-radius: 0.5em;
+  }
+  .destination img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Buttons */
+  .destination button {
+    width: 10vw;
+    max-width: 100%;
+    margin-top: 1em;
+    padding: 1em 1em;
+    font-size: 2.5em;
+    border-radius: 0.5em;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  .destination button :hover {
+    transform: scale(1.1);
+  }
+
+  /* Crafted  */
+  .featuresContainer {
+    display: inline;
+    align-items: end;
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .mainHeading {
+    font-size: 7em;
+    font-weight: bold;
+    padding-top: 2em;
+  }
+
+  .description {
+    font-size: 3.1em;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #555;
+    max-width: 80vw;
+    margin: 10px auto;
+  }
+
+  .featuresGrid {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    flex-wrap: wrap;
+  }
+
+  .featureItem {
+    text-align: center;
+    border-radius: 2em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1.1);
+    height: auto;
+    width: 35em;
+    padding: 1em 1em;
+  }
+
+  .featureItem img {
+    height: 7em;
+    margin-top: 2em;
+  }
+
+  .featureItem h3 {
+    font-size: 3.3em;
+    font-weight: bold;
+    margin-top: 1em;
+  }
+
+  .featureItem p {
+    font-size: 2.5em;
+    color: #777;
+  }
+
+  .subHeading {
+    font-size: 6em;
+    font-weight: bold;
+    margin-top: 2em;
+  }
+
+  /* third part */
+
+  .footerImage {
+    margin-left: -1em;
+    width: 3em;
+    margin-bottom: -1.5em;
+  }
+  #email {
+    margin-left: -71em;
+    margin-top: -1.2em;
+    font-size: 2.5em;
+  }
+  #phone {
+    margin-left: -76em;
+    margin-top: -1.2em;
+    font-size: 2.5em;
+  }
+  #address {
+    margin-left: 2em;
+    margin-top: -1.2em;
+    font-size: 2.5em;
+    text-align: start;
+  }
+  .title {
+    font-family: "caveat";
+    font-size: 6em;
+    font-weight: 700;
+    color: #e65100;
+    margin-bottom: 3vh;
+  }
+
+  /* Reviews Section */
+  .reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr 1fr));
+    max-width: 100%;
+    gap: 3em;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .reviews p {
+    font-size: 4em;
+  }
+
+  .reviewCard {
+    grid-column: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 2em;
+    font-size: 0.7em;
+  }
+  .customerImage {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 30em;
+    height: 30em;
+  }
+  .destinationGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 2em; /* Adjust spacing between cards */
+
+    padding: 2vh 2vw;
+  }
+
+  /* Destination Card */
+  .destinationCard {
+    background: #fff;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  /* Destination Images */
+  .destinationCard img {
+    max-width: 100%;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: 0 3%;
+    border-radius: 0.5em;
+  }
+}

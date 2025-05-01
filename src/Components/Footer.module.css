@@ -1,0 +1,237 @@
+/* === BASE STYLES === */
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  background: #717478a4;
+  padding: 5vh;
+  border: 1px solid rgb(94, 94, 228);
+  margin-top: 5vh;
+  height: auto;
+  text-align: center;
+  color: blue;
+  gap: 2em;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: rgb(7, 7, 60);
+  font-size: 0.4em;
+  font-weight: 300;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  text-align: left;
+
+  gap: 1em;
+}
+
+.footerImage {
+  width: 8vw;
+  height: 8vw;
+}
+
+.contactForm {
+  background: rgb(201, 191, 191);
+  padding: 1vh;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.contactForm h3 {
+  font-size: 1em;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  margin-bottom: 1vh;
+  color: white;
+  background-color: rgb(7, 7, 60);
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 90%;
+  padding: 0.5em;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contactForm textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contactForm ::placeholder {
+  color: black;
+}
+
+.contactForm button {
+  background-color: rgb(7, 7, 60);
+  color: white;
+  border-radius: 0.4em;
+  border: none;
+  width: 7em;
+  padding: 0.5em;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contactForm button:hover {
+  transform: scale(1.1);
+}
+
+/* === TABLET STYLES === */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .contactInfo {
+    gap: 1em;
+    font-size: 0.6em;
+    font-weight: 300;
+  }
+  .footerImage {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .contactForm {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .contactForm input {
+    width: 80%;
+  }
+}
+
+/* === DESKTOP STYLES === */
+@media (min-width: 1025px) {
+  .contactSection {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .contactInfo {
+    flex: 1;
+    font-size: 0.9em;
+    width: auto;
+    gap: 4em;
+  }
+
+  .contactItem {
+    justify-content: flex-start;
+  }
+
+  .footerImage {
+    width: 4vw;
+    height: auto;
+  }
+
+  .contactForm {
+    flex: 1;
+    padding: 2em;
+    max-width: 40vw;
+    margin: 0;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    font-size: 1.4em;
+  }
+
+  .contactForm ::placeholder {
+    font-size: 1em;
+  }
+
+  .contactForm h3 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .contactForm button {
+    font-size: 1em;
+    width: auto;
+    padding: 0.7em 1.2em;
+    transform: translate(13vw);
+  }
+}
+
+@media (min-width: 1440px) {
+  .contactSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #717478a4;
+    padding: 3em 4em;
+    border: 1px solid rgb(94, 94, 228);
+    border-radius: 0.5em;
+    color: rgb(7, 7, 60);
+    gap: 3em;
+    flex-wrap: wrap;
+  }
+
+  .contactInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+    font-size: 1.9em;
+  }
+
+  .contactItem {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .footerImage {
+    width: 2vw;
+    height: auto;
+  }
+
+  .contactForm {
+    flex: 1;
+    max-width: 35vw;
+    padding: 2em;
+    border-radius: 0.5em;
+  }
+
+  .contactForm h3 {
+    font-size: 2.7em;
+    margin-bottom: 1em;
+    padding: 0.5em 0.5em;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    padding: 1em;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+  }
+
+  .contactForm ::placeholder {
+    font-size: 1.2em;
+  }
+
+  .contactForm button {
+    font-size: 2.2em;
+    padding: 0.8em 0.8em;
+    color: white;
+    border: none;
+    transform: translate(16vw);
+
+    border-radius: 0.3em;
+    cursor: pointer;
+  }
+
+  .contactForm button:hover {
+    background-color: #162a6a;
+  }
+}

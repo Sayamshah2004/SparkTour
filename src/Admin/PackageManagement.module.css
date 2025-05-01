@@ -1,0 +1,142 @@
+.wrapper {
+  padding: 2rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.tabButtons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.tabButtons button {
+  padding: 0.5rem 0.6rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #e6a1a1;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.tabButtons .active {
+  background-color: #d42b2b;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  justify-items: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 100%;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.info {
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.info h3 {
+  margin: 0.5rem 0 1rem;
+  background-color: #cfe2ff;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  border-radius: 6px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.actions button {
+  background-color: #e2e2e2;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.actions button:hover {
+  background-color: #d0d0d0;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .buttonBar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1440px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+
+  .card {
+    width: 18vw;
+    border-radius: 1em;
+  }
+
+  .info h3 {
+    font-size: 4rem;
+    padding: 1rem 1.2em;
+    border-radius: 0.2em;
+  }
+
+  .actions button {
+    padding: 0.6rem 1.2rem;
+    font-size: 3rem;
+    border-radius: 0.4em;
+  }
+
+  .tabButtons button {
+    font-size: 3rem;
+    padding: 1rem 1.4rem;
+    border-radius: 0.6em;
+    margin-bottom: 2em;
+  }
+  .tabButtons {
+    gap: 2vw;
+  }
+}

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.adminContainer {
+  padding: 2vh 4vw;
+  font-family: Arial, sans-serif;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1.5vw;
+  margin-bottom: 3vh;
+  flex-wrap: wrap;
+}
+
+.buttonGroup button {
+  background-color: #e77e7e;
+  border: none;
+  padding: 0.5em 0.5em;
+  color: white;
+  margin-right: 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.5em;
+}
+
+.buttonGroup button.active {
+  background-color: #d9534f;
+}
+
+.tableArea {
+  margin-top: 2vh;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.3em;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th,
+td {
+  padding: 0.4em;
+  border: 0.1em solid #ddd;
+  text-align: center;
+}
+
+.searchBar input {
+  padding: 0.3em 0.3em;
+  font-size: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid black;
+  min-width: 30vw;
+  margin-left: 60%;
+}
+.searchIcon {
+  position: relative;
+  top: 0.1em;
+  right: 1em;
+  height: 0.5em;
+}
+.bookingsearchBar input {
+  padding: 1em 1em;
+  font-size: 0.8em;
+  border-radius: 0.8em;
+  border: 1px solid black;
+  min-width: 30vw;
+  margin-left: 60%;
+}
+.bookingsearch {
+  position: relative;
+  top: 0.3em;
+  right: 2em;
+  height: 1em;
+}
+@media (min-width: 1440px) {
+  .adminContainer {
+    font-family: Arial, sans-serif;
+  }
+
+  .buttonGroup {
+    display: flex;
+    gap: 1.5vw;
+    margin-bottom: 3vh;
+    flex-wrap: wrap;
+  }
+
+  .buttonGroup button {
+    background-color: #e77e7e;
+    border: none;
+    padding: 0.5em 0.5em;
+    color: white;
+    margin-right: 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  .buttonGroup button.active {
+    background-color: #d9534f;
+  }
+
+  .tableArea {
+    margin-top: 2vh;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 3em;
+  }
+
+  thead {
+    background-color: #f2f2f2;
+  }
+
+  th,
+  td {
+    padding: 0.4em;
+    border: 0.1em solid #ddd;
+    text-align: center;
+  }
+
+  .searchBar input {
+    padding: 1.1em 1.1em;
+    font-size: 2.5em;
+    border-radius: 0.5em;
+    border: 1px solid black;
+    min-width: 20vw;
+    margin-left: 70%;
+  }
+  .searchIcon {
+    position: relative;
+    top: 0.1em;
+    right: 5em;
+    height: 2.5em;
+  }
+  .bookingsearchBar input {
+    padding: 1em 1em;
+    font-size: 4em;
+    border-radius: 0.8em;
+    border: 1px solid black;
+    min-width: 25vw;
+    margin-left: 70%;
+  }
+  .bookingsearch {
+    position: relative;
+    top: 0.6em;
+    right: 8em;
+    height: 4em;
+  }
+}

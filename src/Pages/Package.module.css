@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Boldonse&family=Graduate&family=Gravitas+One&family=M+PLUS+Rounded+1c&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Caveat:wght@400..700&family=Graduate&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+.packagesContainer {
+  text-align: center;
+  padding: 2rem;
+  max-height: 100%;
+  max-width: 100%;
+  background-color: #d5e5fb; /* light blue */
+  font-family: "Segoe UI", sans-serif;
+}
+
+.title {
+  color: #e63946;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: "caveat";
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-family: "winky sans";
+}
+
+.categoryButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 1.2rem;
+}
+
+.categoryButtons button {
+  background-color: #e86b6b;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  font-family: "roboto slab";
+  border-radius: 1em;
+  font-size: 0.6rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.categoryButtons button:hover {
+  background-color: #d24c4c;
+}
+.search {
+  width: 0.7em;
+  position: relative;
+  left: 1.5em;
+  top: 0.2em;
+}
+.searchBar {
+  width: 60%;
+  padding: 0.6rem;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  margin: 1rem auto 2rem;
+  font-size: 0.6rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 1.5rem;
+
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.card p {
+  margin: 0.5rem 0;
+  font-weight: 600;
+  font-family: Georgia;
+  color: #333;
+}
+
+.bottomNote {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  font-family: "winky sans";
+
+  color: #555;
+}
+
+.cta {
+  margin-top: 1rem;
+  color: #e63946;
+  font-family: "graduate";
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.popup {
+  position: fixed;
+  top: 10em; /* Just below the navbar */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffe6e6;
+  color: #d8000c;
+  padding: 1em 1em;
+  border: 1px solid #d8000c;
+  border-radius: 1em;
+  font-size: 2em;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  animation: fadeOut 3s forwards;
+  text-align: center;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .categoryButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem;
+    margin-bottom: 1.2rem;
+  }
+  .categoryButtons button {
+    padding: 1rem 1em;
+    font-size: 0.8rem;
+  }
+  .search {
+    width: 0.9em;
+  }
+  .searchBar {
+    width: 60%;
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+  .bottomNote {
+    font-size: 1.3rem;
+  }
+
+  .cta {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1025px) {
+  .title {
+    font-size: 5rem;
+  }
+
+  .subtitle {
+    font-size: 1.9rem;
+  }
+
+  .categoryButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem;
+    margin-bottom: 1.2rem;
+  }
+  .categoryButtons button {
+    padding: 0.8rem 0.8em;
+    font-size: 1.3rem;
+  }
+  .search {
+    width: 1.3em;
+    position: relative;
+    left: 2.5em;
+  }
+  .searchBar {
+    width: 60%;
+    padding: 0.8rem;
+    font-size: 1.4rem;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .card p {
+    margin: 0.5rem 0;
+    font-weight: 600;
+    font-size: 1.7em;
+    font-family: Georgia;
+    color: #333;
+  }
+  .bottomNote {
+    font-size: 2rem;
+  }
+
+  .cta {
+    font-size: 2rem;
+    padding-bottom: 1em;
+  }
+}
+@media (min-width: 1440px) {
+  .packagesContainer {
+    width: 100vw;
+  }
+  .title {
+    font-size: 10rem;
+    margin-bottom: 1em;
+  }
+
+  .subtitle {
+    font-size: 4rem;
+    margin-bottom: 1.5em;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50em, 1fr));
+    gap: 6rem;
+    padding: 0 1rem;
+  }
+  .categoryButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 1.2rem;
+  }
+  .categoryButtons button {
+    padding: 1rem 1em;
+    font-size: 3rem;
+  }
+  .search {
+    width: 2em;
+    position: relative;
+    left: 3.2em;
+    top: 0.6em;
+  }
+  .searchBar {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    width: 40%;
+    padding: 1.3rem 1.3rem;
+    font-size: 2.7rem;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card img {
+    width: 100%;
+    height: 30em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+
+    object-fit: cover;
+  }
+
+  .card p {
+    padding: 0.5em 0.5em;
+    margin: 0.5rem 0;
+    font-weight: 600;
+    font-size: 4em;
+    font-family: Georgia;
+    color: #333;
+  }
+  .bottomNote {
+    font-size: 4.5rem;
+    margin-bottom: 1em;
+  }
+
+  .cta {
+    font-size: 4.5rem;
+    padding-bottom: 1em;
+  }
+}
